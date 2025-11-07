@@ -1,0 +1,48 @@
+{
+  "folderId": "1tBOQL3hApHdJ7TxpaW-lBNKGHUzLKZyY",
+  "updatedAt": "2025-11-07T11:07:00Z",
+  "images": [
+    {
+      "id": "1LbR7I_jfZSkCHmPdeNVzQKtKzFvMnHnj",
+      "name": "1.jpg",
+      "title": "PUC Toppers Celebration",
+      "caption": "Learners PU College toppers celebrating their stellar board results.",
+      "alt": "Learners PU College students celebrating PUC results",
+      "imageUrl": "https://drive.googleusercontent.com/uc?id=1LbR7I_jfZSkCHmPdeNVzQKtKzFvMnHnj&export=view",
+      "thumbnailUrl": "https://drive.google.com/thumbnail?id=1LbR7I_jfZSkCHmPdeNVzQKtKzFvMnHnj&sz=w600",
+      "driveUrl": "https://drive.google.com/file/d/1LbR7I_jfZSkCHmPdeNVzQKtKzFvMnHnj/view?usp=drive_web",
+      "tags": ["toppers", "achievements", "campus"]
+    },
+    {
+      "id": "1I8K-RSwYKK7iPF21MZsh31S0ni8QuBvW",
+      "name": "2.jpg",
+      "title": "Foundation Stone Laying",
+      "caption": "Foundation stone laying ceremony to launch the Learners PU College Mysuru campus.",
+      "alt": "Dignitaries at the Learners PU College foundation ceremony",
+      "imageUrl": "https://drive.googleusercontent.com/uc?id=1I8K-RSwYKK7iPF21MZsh31S0ni8QuBvW&export=view",
+      "thumbnailUrl": "https://drive.google.com/thumbnail?id=1I8K-RSwYKK7iPF21MZsh31S0ni8QuBvW&sz=w600",
+      "driveUrl": "https://drive.google.com/file/d/1I8K-RSwYKK7iPF21MZsh31S0ni8QuBvW/view?usp=drive_web",
+      "tags": ["events", "ceremony", "campus"]
+    }
+  ],
+  "collections": [
+    {
+      "slug": "campus-highlights",
+      "title": "Campus Highlights",
+      "description": "Signature snapshots that showcase the spirit and vibrancy of the Learners PU College campus.",
+      "tags": ["campus"]
+    },
+    {
+      "slug": "academic-excellence",
+      "title": "Academic Excellence",
+      "description": "Moments from our achievers as they bring laurels to the institution.",
+      "tags": ["toppers", "achievements"]
+    },
+    {
+      "slug": "events-and-ceremonies",
+      "title": "Events & Ceremonies",
+      "description": "Memorable ceremonies and gatherings with dignitaries and well-wishers.",
+      "tags": ["events", "ceremony"]
+    }
+  ]
+}

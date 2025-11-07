@@ -559,11 +559,60 @@ body {
 .gallery-viewport {
   position: relative;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .gallery-track {
   display: flex;
   transition: transform 0.8s ease;
+  cursor: grab;
+}
+
+.gallery-track:active {
+  cursor: grabbing;
+}
+
+.gallery-controls {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.85rem;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.gallery-controls[hidden] {
+  display: none !important;
+}
+
+.gallery-nav {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(15, 23, 42, 0.55);
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.gallery-nav:hover,
+.gallery-nav:focus-visible {
+  background: rgba(12, 74, 110, 0.85);
+  transform: scale(1.05);
+  outline: none;
+}
+
+.gallery-nav:active {
+  transform: scale(0.96);
 }
 
 .gallery-slide {
