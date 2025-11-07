@@ -51,8 +51,73 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
-/* ===== Optional: switch hero background to another reference image ===== */
-/*
-document.querySelector('.hero-media').style.backgroundImage =
-  "linear-gradient(rgba(255,255,255,.85),rgba(255,255,255,.9)),url('assets/reference_2.png')";
-*/
+/* ===== Hero Gallery Auto-Slider ===== */
+const galleryTrack = document.querySelector('.gallery-track');
+const gallerySlides = galleryTrack ? Array.from(galleryTrack.children) : [];
+const galleryIndicators = document.querySelector('.gallery-indicators');
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let galleryIndex = 0;
+let galleryTimer;
+
+const updateGalleryTransform = () => {
+  if (!galleryTrack) return;
+  galleryTrack.style.transform = `translateX(-${galleryIndex * 100}%)`;
+};
+
+const updateIndicators = () => {
+  if (!galleryIndicators) return;
+  const dots = Array.from(galleryIndicators.children);
+  dots.forEach((dot, idx) => {
+    dot.setAttribute('aria-current', idx === galleryIndex ? 'true' : 'false');
+  });
+};
+
+const setGallerySlide = (index, userInitiated = false) => {
+  if (!galleryTrack || !gallerySlides.length) return;
+  galleryIndex = (index + gallerySlides.length) % gallerySlides.length;
+  updateGalleryTransform();
+  updateIndicators();
+  if (userInitiated) restartGalleryTimer();
+};
+
+const restartGalleryTimer = () => {
+  clearInterval(galleryTimer);
+  if (prefersReducedMotion.matches || gallerySlides.length < 2) return;
+  galleryTimer = setInterval(() => {
+    setGallerySlide(galleryIndex + 1);
+  }, 30000);
+};
+
+if (galleryTrack && gallerySlides.length) {
+  if (galleryIndicators) {
+    galleryIndicators.innerHTML = '';
+    gallerySlides.forEach((_, idx) => {
+      const button = document.createElement('button');
+      button.type = 'button';
+      button.setAttribute('aria-label', `Show gallery image ${idx + 1}`);
+      button.addEventListener('click', () => setGallerySlide(idx, true));
+      galleryIndicators.appendChild(button);
+    });
+  }
+
+  setGallerySlide(0);
+  restartGalleryTimer();
+
+  prefersReducedMotion.addEventListener('change', () => {
+    if (prefersReducedMotion.matches) {
+      clearInterval(galleryTimer);
+    } else {
+      restartGalleryTimer();
+    }
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      clearInterval(galleryTimer);
+    } else {
+      restartGalleryTimer();
+    }
+  });
+
+  window.addEventListener('resize', updateGalleryTransform);
+}
