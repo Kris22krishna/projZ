@@ -16,20 +16,21 @@
   <!-- Header / Navbar -->
 <header class="header">
   <div class="container nav">
-    <a class="brand" href="#home">
+    <a class="brand" href="index.html#home">
       <img src="assets/logo1.png" alt="Learners PU College Logo" class="logo">
       <span class="brand-text">Learners PU College</span>
     </a>
 
     <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#courses">Courses</a>
-      <a href="#facilities">Facilities</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#courses">Courses</a>
+      <a href="index.html#facilities">Facilities</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#contact">Contact</a>
     </nav>
 
-    <a href="#admissions" class="btn btn-primary nav-cta">Admissions Open</a>
+    <a href="index.html#admissions" class="btn btn-primary nav-cta">Admissions Open</a>
 
     <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
       <span></span><span></span><span></span>
@@ -37,12 +38,13 @@
   </div>
 
   <div class="nav-drawer" id="navDrawer" hidden>
-    <a href="#home" class="drawer-link">Home</a>
-    <a href="#about" class="drawer-link">About</a>
-    <a href="#courses" class="drawer-link">Courses</a>
-    <a href="#facilities" class="drawer-link">Facilities</a>
-    <a href="#contact" class="drawer-link">Contact</a>
-    <a href="#admissions" class="btn btn-primary drawer-cta">Admissions Open</a>
+    <a href="index.html#home" class="drawer-link">Home</a>
+    <a href="index.html#about" class="drawer-link">About</a>
+    <a href="index.html#courses" class="drawer-link">Courses</a>
+    <a href="index.html#facilities" class="drawer-link">Facilities</a>
+    <a href="gallery.html" class="drawer-link">Gallery</a>
+    <a href="index.html#contact" class="drawer-link">Contact</a>
+    <a href="index.html#admissions" class="btn btn-primary drawer-cta">Admissions Open</a>
   </div>
 </header>
 
@@ -52,14 +54,81 @@
   <div class="container hero-inner">
     <div class="hero-text">
       <h1>Shape Your Future at<br><span class="highlight">Learners PU College</span></h1>
-      <p>Excellence in Science Education. Offering PCMB & PCMC streams with state-of-the-art facilities and experienced faculty.</p>
+      <p>Excellence in Science Education. Offering PCMB &amp; PCMC streams with state-of-the-art facilities and experienced faculty.</p>
       <div class="hero-buttons">
         <a href="#admissions" class="btn btn-primary">Apply Now →</a>
         <a href="#courses" class="btn btn-outline">Explore Courses</a>
       </div>
     </div>
+
+    <div class="hero-media">
+      <section class="gallery" aria-label="Campus photo gallery">
+        <header class="gallery-head">
+          <h2>Campus Highlights</h2>
+        </header>
+        <div class="gallery-viewport">
+          <div class="gallery-track" data-gallery-track></div>
+        </div>
+        <div class="gallery-indicators" role="tablist" aria-label="Gallery slides"></div>
+        <p class="gallery-empty" hidden data-gallery-empty>Gallery images will appear here soon.</p>
+      </section>
+
+      <section class="hero-videos" aria-label="Popular videos">
+        <header class="hero-videos-head">
+          <h2>Popular Videos</h2>
+        </header>
+        <div class="hero-video-grid">
+          <article class="video-card">
+            <iframe src="https://www.youtube.com/embed/0o8yQ7-5T28" title="Learners PU College Overview" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Learners PU College Overview</h3>
+          </article>
+          <article class="video-card">
+            <iframe src="https://www.youtube.com/embed/f6qY5q1W9Ws" title="Campus Facilities Tour" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Campus Facilities Tour</h3>
+          </article>
+          <article class="video-card">
+            <iframe src="https://www.youtube.com/embed/5qlBBruGjk4" title="Student Success Stories" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>Student Success Stories</h3>
+          </article>
+        </div>
+      </section>
+    </div>
   </div>
 </section>
+
+  <!-- Wall of Fame -->
+  <section class="section wall-of-fame" id="wall-of-fame">
+    <div class="container">
+      <header class="section-head">
+        <h2>Wall of Fame</h2>
+        <p>Celebrating the champions who bring laurels to Learners PU College.</p>
+      </header>
+
+      <div class="wall-grid">
+        <article class="card wall-card">
+          <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" alt="Student receiving a gold medal on stage" />
+          <div class="wall-card-body">
+            <h3>State Topper – PU Board Exams</h3>
+            <p>Ananya Rao secured All Karnataka Rank 1 in the PU Board examinations with a perfect 600/600 score.</p>
+          </div>
+        </article>
+        <article class="card wall-card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Team of students holding a robotics trophy" />
+          <div class="wall-card-body">
+            <h3>National Robotics Champions</h3>
+            <p>Our robotics club clinched the national RoboQuest title with their autonomous disaster relief rover.</p>
+          </div>
+        </article>
+        <article class="card wall-card">
+          <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=900&q=80" alt="Students celebrating a science fair victory" />
+          <div class="wall-card-body">
+            <h3>International Science Fair Winners</h3>
+            <p>Ashwin and Neha won top honours for their renewable energy project at the International Youth Science Expo.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
 
   <!-- About -->
   <section class="section" id="about">
@@ -213,7 +282,29 @@
         <article class="card contact-card">
           <div class="contact-icon">📍</div>
           <h3>Address</h3>
-          <p>Learners PU College Campus<br>Bangalore, Karnataka, India</p>
+          <p>
+            Learners PU College<br>
+            #46/B, Hunsur Main Road, Vijayanagar 2nd Stage<br>
+            Mysuru, Karnataka 570017
+          </p>
+          <div class="map-embed">
+            <iframe
+              title="Learners PU College on Google Maps"
+              src="https://www.google.com/maps?q=12.3341226,76.6151239&amp;z=17&amp;output=embed"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              class="map-overlay"
+              href="https://www.google.com/maps/place/Learners+PU+College/@12.3341278,76.612549,17z/data=!3m1!4b1!4m6!3m5!1s0x3baf7af580c40ee3:0x24de657c5afc89df!8m2!3d12.3341226!4d76.6151239!16s%2Fg%2F1tx4mt7j?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Learners PU College on Google Maps"
+            >
+              <span class="map-overlay-chip">Open in Google Maps <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
         </article>
         <article class="card contact-card">
           <div class="contact-icon">🕘</div>
@@ -243,21 +334,23 @@
       </div>
       <nav class="footer-links" aria-label="Footer">
         <strong>Quick Links</strong>
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#courses">Courses</a>
-        <a href="#facilities">Facilities</a>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About Us</a>
+        <a href="index.html#courses">Courses</a>
+        <a href="index.html#facilities">Facilities</a>
+        <a href="gallery.html">Gallery</a>
       </nav>
       <div class="footer-contact">
         <strong>Contact Info</strong>
         <p>Phone: <a href="tel:+918012345678">+91 80 1234 5678</a></p>
         <p>Email: <a href="mailto:info@learnerspuc.edu.in">info@learnerspuc.edu.in</a></p>
-        <p>Bangalore, Karnataka</p>
+        <p>Mysuru, Karnataka</p>
       </div>
     </div>
     <div class="container tiny">© <span id="year"></span> Learners PU College. All rights reserved.</div>
   </footer>
 
+  <script src="assets/gallery-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
